@@ -22,21 +22,38 @@
         }
 
         </script>
-        
-        
-        <script type="text/javascript">
-        function  getir()
+        <script>
+		window.onload=function()
 		{
-			document.getElementById('test').innerHTML="my first project";
+	document.addEventListener("deviceready",onDeviceReady(),false);
 		}
-      </script>
-     </head>
+	  function onDeviceReady()
+	   {
+	     document.getElementById('btnsave').addEventListener('click',saveContact,false);
+		}
+		
+		function saveContact()
+		{
+		var fullname=document.getElementById("first").value+""+document.getElementById("last").value;
+		var note=document.getElementById("note");
+		var theContact=navigator.contacts.create({"displayname":fullname});	
+		theContact.note=note;
+		theContact.save();
+			}
+		
+        </script>
+        
+        
+         </head>
        <body onload="onBodyLoad()">
-        <embed
-       width="420" height="345"
-src="http://www.youtube.com/v/XGSy3_Czz8k"
-type="application/x-shockwave-flash">
-</embed>
+      <form>
+      <label for="first">kullanıcı adı</label>
+      <input type="text" id="first"/><br/>
+      <label for="password">şifre</label>
+      <input style="margin-left:47px" type="password" id="password"/><br/>
+      <textarea style="width:228px; height:200px"  id="note">Note</textarea><br/>
+      <input type="button" value="kaydet" id="btnsave"/>
+      </form> 
     </body>
 </html>
 
