@@ -2,9 +2,9 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "com.phonegap.example"
-    version   = "1.0.0">
+    version   = "0.0.1">
 
-<name>PhoneGap Build Application</name>
+<name>NazrAPP</name>
 
 <description>
 A simple PhoneGap Build application.
