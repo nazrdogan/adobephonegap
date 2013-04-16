@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Hello PhoneGap</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+        <meta charset="utf-8">
+
+
+        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+        <script type="text/javascript">
+
+        function onBodyLoad()
+        {       
+            document.addEventListener("deviceready", onDeviceReady, false);
+        }
+
+        function onDeviceReady()
+        {
+            // do your thing!
+            navigator.notification.alert("PhoneGap is working")
+        }
+
+        </script>
+        
+        
+        <script type="text/javascript">
+        function  getir()
+		{
+			document.getElementById('test').innerHTML="my first project";
+		}
+      </script>
+     </head>
+       <body onload="onBodyLoad()">
+       <div style="width:auto; height:100px; background-color:#003">
+       <h1 style=" color:#FFF">Test</h1>
+        <p id="demo"  style="color:#FFF">First paragraph</p>
+        </div>
+        <div style="background-color:#666; height:50px">
+        <script>
+		var person={
+			firstname:"nazr",
+			surname:"dgn",
+		};
+		
+		
+		
+		document.write(person.firstname);               
+        </script>
+        </div>
+    </body>
+</html>
+
